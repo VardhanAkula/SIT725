@@ -30,6 +30,7 @@ const num = parseFloat(req.query.num);
 const square = num * num;
 res.send(`The square of ${num} is: ${square}`);
 });
+// Additonal endpoint to add two numbers
 app.get('/add', (req, res) => {
   const a = parseFloat(req.query.a);
   const b = parseFloat(req.query.b);
