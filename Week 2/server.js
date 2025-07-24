@@ -21,7 +21,7 @@ const randomIndex = Math.floor(Math.random() * quotes.length);
 res.json({ quote: quotes[randomIndex] });
 });
 // Optional: POST endpoint to add a new quote
-app.post('/health', (req, res) => {
+app.get('/health', (req, res) => {
   res.send('Server is healthy!');
 });
 // Endpoint to calculate the square of a number
@@ -32,6 +32,5 @@ res.send(`The square of ${num} is: ${square}`);
 });
 // Start the server
 app.listen(PORT, () => {
-    console.log('Server is listening on port 3000');
-    console.log('Visit http://localhost:3000');
+    console.log('Server is running at  http://localhost:3000');
 });
