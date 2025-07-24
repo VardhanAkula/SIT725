@@ -37,7 +37,7 @@ app.get('/add', (req, res) => {
     return res.status(400).send('Invalid input. Please provide two numbers using ?a=number&b=number');
   }
   const add = a + b;
-  res.send(`The addition of ${a} and ${b} is: ${add}`);
+  res.send(`The add of ${a} and ${b} is: ${add}`);
 });
 // Start the server
 app.listen(PORT, () => {
