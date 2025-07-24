@@ -30,6 +30,16 @@ const num = parseFloat(req.query.num);
 const square = num * num;
 res.send(`The square of ${num} is: ${square}`);
 });
+// Additonal endpoint to add two numbers
+app.get('/add', (req, res) => {
+  const a = parseFloat(req.query.a);
+  const b = parseFloat(req.query.b);
+  if (isNaN(a) || isNaN(b)) {
+    return res.status(400).send('Invalid input. Please provide two numbers using ?a=number&b=number');
+  }
+  const add = a + b;
+  res.send(`The add of ${a} and ${b} is: ${add}`);
+});
 // Start the server
 app.listen(PORT, () => {
     console.log('Server is running at  http://localhost:3000');
