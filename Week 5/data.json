@@ -1,0 +1,20 @@
+{
+  "statusCode": 200,
+  "data": [
+    {
+      "_id": "...",
+      "title": "Bird 2",
+      "image": "public/images/1000_F_1210661233_5vLtlKYVi7nML8vCWIuwuLEg5zUhIraj.jpg",
+      "link": "About Bird 2",
+      "description": "Demo description about bird 2"
+    },
+    {
+      "_id": "...",
+      "title": "Bird 3",
+      "image": "public/images/1000_F_1210661233_5vLtlKYVi7nML8vCWIuwuLEg5zUhIraj.jpg",
+      "link": "About Bird 3",
+      "description": "Demo description about bird 3"
+    }
+  ],
+  "message": "Success"
+}
