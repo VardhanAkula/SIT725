@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "chai": "^4.5.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.1",
+    "request": "^2.88.2"
+  },
+  "scripts": {
+    "test": "mocha --timeout 5000"
+  }
+}
